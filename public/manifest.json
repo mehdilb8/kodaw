@@ -1,0 +1,92 @@
+{
+  "short_name": "WebKoda",
+  "name": "WebKoda - Agence Création de Site Web",
+  "description": "Agence création de site web premium. Sites web sur-mesure, SEO, marketing digital. Devis gratuit sous 24h.",
+  "icons": [
+    {
+      "src": "images/webkoda.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "images/logo-agence-web.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "images/logo-agence-web.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "images/apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "180x180",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#2563eb",
+  "background_color": "#ffffff",
+  "categories": [
+    "business",
+    "productivity",
+    "utilities"
+  ],
+  "lang": "fr",
+  "scope": "/",
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "shortcuts": [
+    {
+      "name": "Contact",
+      "short_name": "Contact",
+      "description": "Contactez WebKoda pour un devis gratuit",
+      "url": "/#contact",
+      "icons": [
+        {
+          "src": "images/logo-agence-web.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Services",
+      "short_name": "Services",
+      "description": "Découvrez nos services web",
+      "url": "/#services",
+      "icons": [
+        {
+          "src": "images/logo-agence-web.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Portfolio",
+      "short_name": "Portfolio",
+      "description": "Voir nos réalisations",
+      "url": "/#portfolio",
+      "icons": [
+        {
+          "src": "images/logo-agence-web.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Blog",
+      "short_name": "Blog",
+      "description": "Actualités et conseils web",
+      "url": "/blog",
+      "icons": [
+        {
+          "src": "images/logo-agence-web.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}
