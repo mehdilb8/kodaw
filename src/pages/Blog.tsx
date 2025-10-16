@@ -54,10 +54,7 @@ const BlogCard = ({ post, index }: { post: any; index: number }) => {
             <User size={16} className="text-green-500" />
             <span>WebKoda</span>
           </div>
-          <div className="flex items-center gap-2">
-            <Eye size={16} className="text-purple-500" />
-            <span>1.2k vues</span>
-          </div>
+          
         </div>
         
         {/* Titre */}

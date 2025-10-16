@@ -24,7 +24,7 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: Deploy build folder to FTP
+      - name: Deploy build folder to FTP (clean slate)
         uses: SamKirkland/FTP-Deploy-Action@v4
         with:
           server: ${{ secrets.FTP_SERVER }}
@@ -32,7 +32,8 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: ${{ secrets.FTP_PORT }}
           local-dir: ./build
-          server-dir: ${{ secrets.FTP_REMOTE_DIR }}build/
+          server-dir: ${{ secrets.FTP_REMOTE_DIR }}
+          dangerous-clean-slate: true
 
       - name: Update sitemap.xml
         uses: SamKirkland/FTP-Deploy-Action@v4
@@ -43,7 +44,6 @@ jobs:
           port: ${{ secrets.FTP_PORT }}
           local-dir: ./public
           server-dir: ${{ secrets.FTP_REMOTE_DIR }}
-          exclude: |
-            *
+          
           include: |
             sitemap.xml

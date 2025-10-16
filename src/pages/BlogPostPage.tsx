@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import { getBlogById } from '../data/blogList';
@@ -6,6 +6,16 @@ import { getBlogById } from '../data/blogList';
 const BlogPostPage = () => {
   const { id } = useParams<{ id: string }>();
   const post = getBlogById(id || '');
+
+  useEffect(() => {
+    // Appeler la fonction d'initialisation si elle existe
+    if (post && (post as any).initQuiz) {
+      // Attendre que le DOM soit rendu avant d'initialiser le quiz
+      setTimeout(() => {
+        (post as any).initQuiz();
+      }, 100);
+    }
+  }, [post]);
 
   if (!post) return <div className="py-20 text-center">Article introuvable.</div>;
 

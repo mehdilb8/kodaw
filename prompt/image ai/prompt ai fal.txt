@@ -1,0 +1,2 @@
+voici ce blog  , je veux utiliser ce model https://fal.ai/models/rundiffusion-fal/juggernaut-flux/pro , fais moi 3 prompt ( en lien avec mon blog ) pas de text sur limage , je veux des prompt en anglais
+

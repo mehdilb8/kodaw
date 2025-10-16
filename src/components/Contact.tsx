@@ -47,7 +47,7 @@ const Contact = () => {
     {
       icon: <Phone className="text-white" size={24} />,
       title: "Appelez-nous",
-      value: "+33 1 23 45 67 89",
+      value: "+33 7 62 25 58 04",
       description: "Lun-Ven 9h-18h",
       gradient: "bg-gradient-to-r from-green-500 to-emerald-600",
       link: "tel:+33123456789"
@@ -309,7 +309,7 @@ const Contact = () => {
                           value={formData.phone}
                           onChange={handleChange}
                           className="w-full px-4 py-4 border border-gray-300 rounded-xl focus:ring-4 focus:ring-blue-500/20 focus:border-blue-500 outline-none transition-all duration-200" 
-                          placeholder="+33 1 23 45 67 89"
+                          placeholder="+33 7 62 25 58 04"
                         />
                       </div>
                       

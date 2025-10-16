@@ -161,7 +161,7 @@ const Navbar = () => {
                 <div className="flex items-center justify-between text-sm">
                   <div className="flex items-center space-x-2">
                     <Phone size={14} className="text-blue-600" />
-                    <span className="text-gray-700">+33 1 23 45 67 89</span>
+                    <span className="text-gray-700">+33 7 62 25 58 04</span>
                   </div>
                   <span className="bg-blue-600 text-white px-2 py-1 rounded text-xs font-medium">
                     Appel gratuit
